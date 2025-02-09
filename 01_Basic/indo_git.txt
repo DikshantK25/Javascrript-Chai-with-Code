@@ -1,0 +1,125 @@
+Here are some **basic Git commands** that are useful when working with Git repositories:
+
+### 1. **Initializing a Repository**
+   - To initialize a new Git repository in your project folder:
+     ```
+     git init
+     ```
+
+### 2. **Checking the Status**
+   - To check the status of your working directory (staged, unstaged, or untracked changes):
+     ```
+     git status
+     ```
+
+### 3. **Adding Changes to the Staging Area**
+   - To add a specific file to the staging area (prepare for commit):
+     ```
+     git add <file>
+     ```
+   - To add all changed files to the staging area:
+     ```
+     git add .
+     ```
+
+### 4. **Committing Changes**
+   - To commit your staged changes with a message:
+     ```
+     git commit -m "Your commit message"
+     ```
+
+### 5. **Viewing the Commit History**
+   - To see the commit history:
+     ```
+     git log
+     ```
+
+### 6. **Cloning a Repository**
+   - To clone an existing repository from GitHub (or any remote server):
+     ```
+     git clone <repository-url>
+     ```
+
+### 7. **Viewing Changes (Before Commit)**
+   - To see what changes have been made (but not yet committed):
+     ```
+     git diff
+     ```
+
+### 8. **Pushing Changes to a Remote Repository**
+   - To push your commits to the remote repository:
+     ```
+     git push origin <branch-name>
+     ```
+
+### 9. **Pulling Changes from a Remote Repository**
+   - To pull the latest changes from the remote repository to your local branch:
+     ```
+     git pull
+     ```
+
+### 10. **Creating a New Branch**
+   - To create a new branch:
+     ```
+     git branch <branch-name>
+     ```
+   - To switch to a newly created branch:
+     ```
+     git checkout <branch-name>
+     ```
+   - Or you can create and switch to a branch in one command:
+     ```
+     git checkout -b <branch-name>
+     ```
+
+### 11. **Merging Branches**
+   - To merge changes from one branch into your current branch:
+     ```
+     git merge <branch-name>
+     ```
+
+### 12. **Stashing Changes**
+   - To temporarily stash your changes (useful when you need to switch branches):
+     ```
+     git stash
+     ```
+   - To apply the stashed changes back:
+     ```
+     git stash apply
+     ```
+
+### 13. **Removing Files**
+   - To remove a file from both the working directory and staging area:
+     ```
+     git rm <file>
+     ```
+   - To remove a file from the staging area only (without deleting the file):
+     ```
+     git reset <file>
+     ```
+
+### 14. **Checking Your Remote Repositories**
+   - To view the remotes configured for your repository:
+     ```
+     git remote -v
+     ```
+
+### 15. **Setting Upstream (Linking Local Branch to Remote)**
+   - If you're pushing a new branch for the first time, you'll need to set the upstream branch:
+     ```
+     git push --set-upstream origin <branch-name>
+     ```
+
+### 16. **Undoing Changes**
+   - To undo changes in a file that are not yet staged:
+     ```
+     git checkout -- <file>
+     ```
+   - To undo a commit but keep the changes:
+     ```
+     git reset --soft HEAD^
+     ```
+
+---
+
+These are the **essential Git commands** you'll use regularly. Let me know if you need any more specific examples or explanations!
